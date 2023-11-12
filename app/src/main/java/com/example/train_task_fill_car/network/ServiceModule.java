@@ -27,7 +27,7 @@ public class ServiceModule {
         }
         return instance;
     }
-//    public Api getService(){ return getDaDataService(Const.HEAD_URL, Api.class);}
+    public Api getService(){ return getDaDataService(Const.URL, Api.class);}
 
     public <T> T getDaDataService(String url, final Class<T> service) {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()

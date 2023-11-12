@@ -6,7 +6,7 @@ import rx.schedulers.Schedulers;
 
 public class BaseDataProvider {
     protected Observable.Transformer schedulerTransformer;
-//    protected Api service = ServiceModule.getInstance().getService();
+    protected Api service = ServiceModule.getInstance().getService();
 
     public BaseDataProvider() {
         schedulerTransformer = o -> ((Observable) o)
