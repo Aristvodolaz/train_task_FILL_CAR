@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/background_for_nav_linear"
+        android:layout_marginBottom="20sp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_height="56sp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/info"
+            android:src="@drawable/info_icon"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/code"
+            android:src="@drawable/qr_icon"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/person"
+            android:src="@drawable/person_icon"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>
